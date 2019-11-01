@@ -7,7 +7,7 @@ padding: 60px;
 margin: 70px;
 }
 </style>
-
+<!-- this div class has the beginning of the quiz-->
 <div class="header">
   <center> <h1> ✨💫Which out of my favorite teachers are you?✨💫</h1>
   <center> <p>Take this quiz in finding out in what teacher you are most like :)</p>
@@ -22,9 +22,11 @@ padding: 60px;
 margin:70px;
 }
 </style>
+<!--This is other div that seperates the first one-->
 
 <div class="section1">
-  <center> <h1> What is Your Favorite Subject?</h1>
+  <center> <h1> 🌈✨What is Your Favorite Subject?🌈✨</h1>
+  <form class="section2" action="inner.HTML" method="post">
     <label for="Option 1">Art🎨</label>
     <input type="radio" name="art" value="">
     <br>
@@ -46,7 +48,9 @@ margin:70px;
     <br>
     <br>
     <img src="notebook.jpg" alt="hard carry" width="400" height="300">
+
 </div>
+</form>
 <style media="screen">
   .section2{
   background-color:#FF84D1;
@@ -55,7 +59,7 @@ padding: 60px;
 margin: 70px;
 }
 </style>
-
+<!--another sections with different questions and options-->
 <div class="section2">
   <center> <h2>✨ What is Your Favorite Food? ✨</h2>
     <label for="Option 1">Soup🍲</label>
@@ -66,11 +70,11 @@ margin: 70px;
   <input type="radio" name="Pizza" value="">
   <br>
   <br>
-  <label for="Option3">Mexican Food🌯</label>
+  <label for="Option3">Rice🍚</label>
   <input type="radio" name="Mexican Food" value="">
   <br>
   <br>
-  <label for="Option4">Asian Food🍜</label>
+  <label for="Option4"></label>
   <input type="radio" name="Asian Food" value="">
   <br>
   <br>
@@ -89,7 +93,7 @@ padding: 60px;
 margin: 70px;
 }
 </style>
-
+<!--this is another seperate section-->
 <div class="section3">
   <center> <h2>🍓What is Your Favorite Color?🔮</h2>
     <label for="Option1">Red🌹</label> <input type="radio" name="Red" value="">
@@ -110,7 +114,7 @@ margin: 70px;
   <img src="blue.jpg" alt="peekaboo" width="300" height="400">
   <br>
   <br>
-<label for="Option5">Mrs.Rubin's respone</label>
+<label for="Option5">Orange</label>
 <input type="radio" name="asdfasdfasdfasd" value="">
 <br>
 <br>
@@ -125,17 +129,13 @@ margin: 70px;
 }
 </style>
 <div class="section4">
-  <center> <h2>What is Your Favorite Animal?</h2>
+  <center> <h2>✨🦈 What is Your Favorite Animal? ✨🦈</h2>
   <label for="Option1">Dog🐶</label>
   <input type="radio" name="Dog" value="">
   <br>
   <br>
-  <label for="Option2">Tyler B. Respone</label>
+  <label for="Option2">Bear</label>
   <input type="radio" name="asdfasdfasdf" value="">
-  <br>
-  <br>
-  <label for="Option3">Ms.Rubin's respone </label>
-  <input type="radio" name="" value="">
   <br>
   <br>
   <label for="Option4">Ian's respones</label>
@@ -163,11 +163,11 @@ margin: 70px;
     <input type="radio" name="considine" value="">
     <br>
     <br>
-    <label for="Option2">burns</label>
+    <label for="Option2">Hiking</label>
     <input type="radio" name="burns" value="">
     <br>
     <br>
-    <label for="Option3">rubin</label>
+    <label for="Option3"> Cleaning the House🏘</label>
     <input type="radio" name="rubin" value="">
     <br>
     <br>
@@ -175,18 +175,58 @@ margin: 70px;
     <input type="radio" name="ian" value="">
     <br>
     <br>
-    <label for="Option5">johnathan</label>
+    <label for="Option5">Watching Youtube Videos 💻</label>
     <input type="radio" name="johnathan" value="">
     <br>
     <br>
 
+<!--final results-->
 </div>
 <div class="section5">
 <center><h1>💫🌟✨🚀Sumbit Your Answer!💫🌟✨🚀</h1>
   <p> You have finally reached the end of the quiz, Let's Find Out who you are! </p>
   <label for="Submit Your Answers!"></label>
-  <input type="button"  value="submit">
+  <input type="button"  value="submit" onclick="Showresults();">
+  <form class="answer" action="inner.HTML" method="post">
 
 </div>
+</form>
+<style media="screen">
+  .section6 {
+  background-color: #FFA8DF;
+color: #892062;
+padding: 60px;
+margin: 70px; }
 
-<var></var>
+</style>
+
+
+</div>
+</form>
+<div class="section6">
+  <div id="results">
+    <p><strong><center><h1>You are Most Like......</h1></strong></p>
+<form class="section6" action="innerHTML" method="post">
+
+      <span id="answer"></span>
+
+    </div>
+  </div>
+
+<!--where the javascript has begins-->
+
+<script type="javascript">
+function Showresults() {
+
+  var a = "johnathan";
+  document.getElementById("johnathan").innerHTML = a;
+
+  var b = "considine"
+  document.getElementById("considine").innerHTML = b;
+
+  var c = "ms.rubin"
+  document.getElementById("ms.rubin").innerHTML = c;
+
+}
+
+</script>
