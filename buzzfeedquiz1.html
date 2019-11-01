@@ -25,8 +25,9 @@ margin:70px;
 <!--This is other div that seperates the first one-->
 
 <div class="section1">
+  <form>
+
   <center> <h1> 🌈✨What is Your Favorite Subject?🌈✨</h1>
-  <form class="section2" action="inner.HTML" method="post">
     <label for="Option 1">Art🎨</label>
     <input type="radio" name="art" value="">
     <br>
@@ -71,11 +72,7 @@ margin: 70px;
   <br>
   <br>
   <label for="Option3">Rice🍚</label>
-  <input type="radio" name="Mexican Food" value="">
-  <br>
-  <br>
-  <label for="Option4"></label>
-  <input type="radio" name="Asian Food" value="">
+  <input type="radio" name="Rice" value="">
   <br>
   <br>
   <label for="Option5">Other!🍟</label>
@@ -96,29 +93,32 @@ margin: 70px;
 <!--this is another seperate section-->
 <div class="section3">
   <center> <h2>🍓What is Your Favorite Color?🔮</h2>
-    <label for="Option1">Red🌹</label> <input type="radio" name="Red" value="">
-    <img src="SolidRedSized.jpg" alt="" width="200" height="300">
+    <label for="Option1">Red🌹</label>
+    <input type="radio" name="Red" value="">
+    <img src="SolidRedSized.jpg" alt="" width="100" height="40">
     <br>
     <br>
-  <label for="Option2"> Red but different🎒</label> <input type="radio" name="Vermillion" value="">
-  <img src="vermillion.jpg" alt="hit you with ddu du ddu du" width="300" height="400">
+  <label for="Option2"> Red but different🎒</label>
+  <input type="radio" name="Vermillion" value="">
+  <img src="vermillion.jpg" alt="hit you with ddu du ddu du" width="100" height="40">
   <br>
   <br>
   <label for="Option3">Green🍏</label>
   <input type="radio" name="Green" value="">
-  <img src="green.jpg" alt="crazy for myself" width="300" height="400">
+  <img src="green.jpg" alt="crazy for myself" width="100" height="40">
   <br>
   <br>
   <label for="Option4">Blue🦋</label>
   <input type="radio" name="Blue" value="">
-  <img src="blue.jpg" alt="peekaboo" width="300" height="400">
+  <img src="blue.jpg" alt="peekaboo" width="100" height="40">
   <br>
   <br>
-<label for="Option5">Orange</label>
-<input type="radio" name="asdfasdfasdfasd" value="">
+<label for="Option5">Orange 🍊</label>
+<input type="radio" name="orange" value="">
+<img src="orange.png" alt="great!" width="100" height="40">
 <br>
 <br>
-<img src="nailpolish.jpg" alt="euphoria" width="400" height="300">
+<img src="nailpolish.jpg" alt="euphoria" width="300" height="400">
 </div>
 <style media="screen">
   .section4{
@@ -134,12 +134,16 @@ margin: 70px;
   <input type="radio" name="Dog" value="">
   <br>
   <br>
-  <label for="Option2">Bear</label>
+  <label for="Option2">Bear🐻</label>
   <input type="radio" name="asdfasdfasdf" value="">
   <br>
   <br>
-  <label for="Option4">Ian's respones</label>
+  <label for="Option3">Cat🐈</label>
   <input type="radio" name="asdfasdsdasd" value="">
+  <br>
+  <br>
+  <label for="Option4">Other🦀</label>
+  <input type="text" name="other!" value="">
   <br>
   <br>
   <img src="dog.jpg" alt="doggo" width="200" height="300">
@@ -159,11 +163,11 @@ margin: 70px;
 
 <div class="section5">
   <center> <h2>What is Your Favorite Passtime?</h2>
-    <label for="Option1">considine</label>
+    <label for="Option1">Watering Plants🌱</label>
     <input type="radio" name="considine" value="">
     <br>
     <br>
-    <label for="Option2">Hiking</label>
+    <label for="Option2">Hiking🧗🏻‍</label>
     <input type="radio" name="burns" value="">
     <br>
     <br>
@@ -171,7 +175,7 @@ margin: 70px;
     <input type="radio" name="rubin" value="">
     <br>
     <br>
-    <label for="Option4">ian</label>
+    <label for="Option4">Reading Books📚</label>
     <input type="radio" name="ian" value="">
     <br>
     <br>
@@ -206,26 +210,73 @@ margin: 70px; }
 <div class="section6">
   <div id="results">
     <p><strong><center><h1>You are Most Like......</h1></strong></p>
-<form class="section6" action="innerHTML" method="post">
 
       <span id="answer"></span>
+      <span id="answer2"></span>
+
+
+
 
     </div>
   </div>
 
 <!--where the javascript has begins-->
 
-<script type="javascript">
+<script language="JavaScript">
 function Showresults() {
 
   var a = "johnathan";
-  document.getElementById("johnathan").innerHTML = a;
+  document.getElementById("answer").innerHTML = a;
 
-  var b = "considine"
-  document.getElementById("considine").innerHTML = b;
+  var b = "mr.considine"
+  document.getElementById("answer").innerHTML = b;
 
   var c = "ms.rubin"
-  document.getElementById("ms.rubin").innerHTML = c;
+  document.getElementById("answer").innerHTML = c;
+
+  var d = "mr.burns"
+  document.getElementById("answer").innerHTML = d;
+
+  var e = "ian"
+  document.getElementById("answer").innerHTML = e;
+
+var answer = 0;
+if (document.getElementById("art").checked)
+{
+a = a + 1;
+document.getElementById('johnathan').innerHTML = a;
+
+}
+
+if (document.getElementById("computer science").checked)
+{
+b = b + 2;
+document.getElementById('mr.considine').innerHTML = b;
+}
+
+if (document.getElementById("english").checked)
+{
+  c = c + 2
+  document.getElementById('ian').innerHTML = c;
+}
+
+if (document.getElementById("global politics").checked)
+{
+  d = d + 2
+document.getElementById('mr.burns').innerHTML = d;
+}
+
+
+
+
+
+
+}
+
+
+
+
+
 
 }
 
