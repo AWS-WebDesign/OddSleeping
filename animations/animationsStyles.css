@@ -1,0 +1,13 @@
+div {
+height: 50px;
+width: 40px;
+display: block;
+margin: 35px;
+padding: 40px;
+background-color: #FFC037;
+position: center;
+
+
+animation-name: animations;
+animation-duration: 30s;
+}
