@@ -8,6 +8,18 @@ background-color: #FFC037;
 position: center;
 
 
-animation-name: animations;
+animation-name: lol ur not mr. weir;
 animation-duration: 30s;
+animation-iteration-count: infinite;
+animation-delay: 3s;
+background-color: green;
+}
+
+@keyframes lol ur not mr. weir {
+0% {background-color: #5CB984 left: 0px; top: 0px;}
+20% {background-color: #D94713 left: 150px; top: 150px;}
+50% {background-color: #FFF790 right: 200px; top: 200px;}
+70% {background-color: #B2DBFF right: 300px; top: 300px;}
+100% {background-color: #DCB2FF left: 350px; top: 350px;}
+
 }
