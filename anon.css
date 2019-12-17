@@ -356,6 +356,28 @@ the z index when I was adjusting it, but it's basically irrelevant. It is on the
 #hiddenmessage2:hover {
   color: Black;
 }
+/*This defines the reddit romance question images. It just gives them a border. */
+#redditq {
+  border-style: solid;
+  border-color: DarkGrey;
+  border-width:5px;
+}
+/*This defines the text about the dino reddit text. It is floated to the right, and has a bold font weight,
+meaning it'll appear bold. Everything else is pretty simple. */
+#dinoqtext {
+  float: right;
+  margin-top: -250px;
+  font-size: 23px;
+  font-weight: bold;
+}
+/*This is the image that talks about dinos. It has a border. It is also floated right.  */
+#dinoq {
+  float: right;
+  border-style: solid;
+  border-color: DarkGrey;
+  border-width: 5px;
+  margin-top: -215px;
+}
 
  /*
  v
@@ -404,7 +426,9 @@ input[type=button] {
   margin-right: 50%;
 }
 /*This applies to the final answer - at first, it will not be visible. I altered the visibility and not the
-display so that it still takes up space on the page, it's just not visible. */
+display so that it still takes up space on the page, it's just not visible. It will be big in font so that it's easy to see.*/
 #answerfinal {
   visibility: hidden;
+  font-size: 40px;
+}
 }
