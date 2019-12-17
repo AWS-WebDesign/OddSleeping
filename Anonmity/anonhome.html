@@ -1,0 +1,103 @@
+<!--This is the home page for our anonymity project!!-->
+
+<!--This defines the document as an html document- it will be at the front of every single html document. -->
+<!DOCTYPE html>
+<!--Everything inside this will be written as html code.-->
+<html lang="en" dir="ltr">
+<!--Inside the head is all of the meta data. The title is what will appear in the tab for the page. It will not appear as content
+on the actual webpage. -->
+  <head>
+    <meta charset="utf-8">
+    <title>Anonymity</title>
+    <!--This links this document to the css document anon.css so that the css styles from there can be applied to html documents here. You will see them
+  referencing each other through the use of classes and ids. -->
+    <link rel="stylesheet" href="anon.css">
+  </head>
+  <!--The content of the page goes within the body element. -->
+  <body>
+    <!--This div defines the title text at the top- as the class name implies, it changes the font size and also
+  background color among other characteristics. A div does not physically appear as anything, but groups elements together, sometimes
+providing spacing between two divs. Divs can have classes, which are defined in css files as having certain properties to be given to the
+elements within it. -->
+    <div class="biigheader">
+      <!--This div applies to the word 'Anonymity' which has a special characterization outside of biigheader because it
+    is, as the name implies, extra big. This will appear as a header (h1) that is very large and says Anonymity. It will also
+  have all of the characteristics of biigheader, because this is nested within the biigheader div. -->
+      <div class="extrabiigheader">
+          <h1>Anonymity</h1>
+      </div>
+      <!--A span is a short line of text. This will display beneath the word 'Anonymity'. -->
+      <span>A project by Anna and Ananya</span>
+      </div>
+      <!--This div defines everything within the navigation bar which can be seen at the top. The navbar class manipulates the
+      width of all of the spans within it, their display (which is block), and other characteristics like font size.  -->
+    <div class="navbar">
+      <!--These are spans which are short lines of text, and within them is anchors (a) which work as hyperlinks to other files. These
+    anchors link to the html files defined by the attribute 'href'. The ./ means that it is linking to an internal file. The links will
+  appear as the text that is the content of the anchors. For example, the first link will appear as the word "home". -->
+      <span><a href="./Anonhome.html">Home</a></span>
+      <span><a href="./Anonpros.html">Pros</a></span>
+      <span><a href="./Anoncons.html">Cons</a></span>
+      <span><a href="./Anonquiz.html">Quiz</a></span>
+    </div>
+    <!--This div holds the main content of the webpage, including its z-index (which relates to the staking of elements), its background color
+  and other general properties. -->
+    <div class="anonmain">
+      <!--This is an image of a creepy mask. It will be 300 pixels in width and height. The src attribute relates to which image is being
+    referenced. In this case, it is the image "mask.png". If the image doesn't load, the 'alt' attribute will display text in its place reading
+  'anonymous face'. It's class is specially animated, so this image will actually dissapear.  -->
+        <img height="300px" width= "300px" class="anonimg" src="mask.png" alt="Anonymous face">
+<!--Below are line breaks. They are similar to the 'return' key, and create space between content. -->
+      <br> <br>   <br> <br>   <br> <br>
+      <!--This is a span with the class anonfacetext. It has special class specifications, so it is timed so that when the face mask dissapears,
+    this text will show. The content of this text is 'anonymity: a dangerous right'. -->
+      <span class="anonfacetext">Anonymity: a dangerous right</span>
+            <br> <br>   <br> <br>
+<!--Within this div is all of the main content of the document, besides the special face image animation above. It has some padding specifications, but nothing
+much. I use this class for all of the documents. -->
+      <div class="anoncontent">
+<!--within this paragraph is some background about anonymity, along with an audio file. -->
+      <p>
+        <!--This is an audio element. It appears as an audio file that is able to be played.
+      The controls attribute means that it has a pause and play button among other parameters.
+    The source defines the audio file that will be played. The source is an mp3 file called
+  anonymitysound, and the type defines what type of audio file it is. -->
+        <audio controls>
+          <source src="anonymitysound.mp3" type="audio/mpeg">
+        </audio> <br>
+        Above is the definition for anonymity.
+        Anonymity, or being anonymous from the public eye, involves writing or posting thoughts or feelings on an online website.
+        There are pros and cons of being anonymous. You should be aware of some things, and consider the consequences of others.
+        With the tabs above, you can read more in depth about the pros and cons of anonymity.
+        Don't forget to take our quiz to test your knowledge about anonmity.
+      </p>
+      <!--Nav elements are used to hold links together like a div. They do not really have special properties, so just treat this like a div. -->
+<br> <br>
+    <nav>
+      <!--This is the title for my citations list. It has the element strong around it so that it will appear as bold. -->
+      <strong>Citations:</strong> <br> <br>
+<!--These anchors (a) have hrefs that link to their respective documents. These are external links. The content of them that will be displayed is
+between the '> <' . The attribute target="_blank" makes the document open in a new window when clicked.  -->
+      <a target="_blank" href="http://www.pngonly.com/wp-content/uploads/2017/05/Anonymous-Mask-High-Quality-Transparent-PNG.png">Face image</a> <br>
+      <a target="_blank" href="https://www.youtube.com/embed/0Xo8N9qlJtk">Cyberbullying video</a><br>
+      <a target="_blank" href="https://cyberbullying.org/2019-cyberbullying-data">Cyberbullying statistic</a><br>
+      <a target="_blank" href="https://www.fbi.gov/investigate/cyber">FBI information</a><br>
+      <a target="_blank" href="https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2018/hackers.jpg"> Photo of hacker</a><br>
+      <a target="_blank" href="https://www.pewresearch.org/internet/2013/09/05/anonymity-privacy-and-security-online/">Pew Research study</a><br>
+      <a target="_blank" href="https://www.reddit.com/r/AskReddit/comments/chaf53/what_are_some_good_first_date_questions_to_get_to/">Image Citation</a><br>
+      <a target="_blank" href="https://www.reddit.com/r/NoStupidQuestions/comments/34u4aw/how_many_subreddits_are_there/">Information on amount of subreddits.</a><br>
+      <a target="_blank" href="http://cdn.images.express.co.uk/img/dynamic/130/590x/Stranger-danger-597293.jpg">Image of kid talking to stranger</a><br>
+      <a target="_blank" href="https://62e528761d0685343e1c-f3d1b99a743ffa4142d9d7f1978d9686.ssl.cf2.rackcdn.com/files/36587/width668/krms3z3z-1385943331.jpg">Image of cybercrime</a><br>
+      <a target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Speech_bubble.svg/1020px-Speech_bubble.svg.png">Image of speech bubble</a><br>
+      <a target="_blank" href="http://www.pngall.com/speech-bubble-png">Image of second speech bubble</a><br>
+      <a target="_blank" href="https://www.reddit.com/search/?q=questions">Reddit questions citation</a><br>
+      <a target="_blank" href="https://us.norton.com/mostdangeroustown2/bonus/why-freedom-and-anonymity-on-the-internet-is-important">Cyber security anonymity information</a><br>
+      <a target="_blank" href="https://www.youtube.com/watch?v=XbaJ1JsBWQE">Bye sister video</a><br>
+      <a target="_blank" href="https://perezhilton.com/wp-content/uploads/2019/05/tati-westbrook-james-charles-860x475.jpg">Bye sister image</a><br>
+      <a target="_blank" href="https://www.youtube.com/watch?v=uFvtCUzfyL4&t=15s">No more lies video</a><br>
+    </nav>
+    <br><br>
+      </div>
+      </div>
+<!--These are the closing tags for some of the bigger divs and for the body. -->
+  </body>

@@ -1,0 +1,275 @@
+<!--This is the document for the html quiz that is under the link 'quiz' in the navigation bar. -->
+
+<!--This defines the document as an html document. -->
+<!DOCTYPE html>
+<!--This means that the content of this element will be html elements. -->
+<html lang="en" dir="ltr">
+<!--The head stores the meta data of this document. It will have a title of anonymity quiz
+which can be seen in the tab above the webpage. It also links to the css document anon.css-->
+  <head>
+    <meta charset="utf-8">
+    <title>Anonymity Quiz</title>
+    <link rel="stylesheet" href="anon.css">
+  </head>
+  <!--This is the body element - it holds all of the content of the webpage. -->
+  <body>
+    <!--This is the div for the title at the top of the webpage. It will be light blue and very large.
+   -->
+    <div class="biigheader">
+      <!--This is the div for just the h1 anonymity:quiz which will make it bigger than the rest of biigheader. -->
+      <div class="extrabiigheader">
+          <h1>Anonymity: Quiz</h1>
+      </div>
+      <span>A project by Anna and Ananya</span>
+      </div>
+      <!--This is the navigation bar - it links to other html documents within this project using anchors (a)
+    and './'-->
+    <div class="navbar">
+      <span><a href="./Anonhome.html">Home</a></span>
+      <span><a href="./Anonpros.html">Pros</a></span>
+      <span><a href="./Anoncons.html">Cons</a></span>
+      <span><a href="./Anonquiz.html">Quiz</a></span>
+    </div>
+      <!--This is the div that defines all of the content, as well as the div that defines all of the main content. -->
+  <div class="anonmain">
+      <div class="anoncontent">
+        <!--This is the title to the quiz. It is a h2 instead of an h1 and so it is a slightly smaller header. -->
+    <h2>Anonymity Quiz!</h2>
+    <!--Here's some info about the quiz. -->
+    <p>This quiz was built to test how well you payed attention to our details, and also how much you know about
+    anonymity and privacy online!</p>
+<!--Below is a form. Forms use inputs from the user in conjunction with javascript to create an output. In this case, I use the form
+to make a quiz to test the user's ability to recall information from the webpage. It does not store any information. The attribute of method
+shows what to do with the input taken. In this case, it's made public. -->
+    <form method="post">
+<!--This is the div for this whole question.-->
+      <div>
+        <!--This is the actual question being asked of the user. -->
+        <span id="formq">Anonymity allows people to be mallicious online. What percent of teens are cyberbullied?</span><br>
+        <!--This is the possible answer. The label shows text that is tethered to this input. The input is where the user actually
+      has an input. In this case, the type of input is checkbox, so the user will check a box to indicate their answer. -->
+        <div class="contentdiv">
+          <label for="25cyber">25%</label>
+          <input id="25cyber" type="checkbox">
+        </div>
+        <!--This is the possible answer. The label shows text that is tethered to this input. The input is where the user actually
+      has an input. In this case, the type of input is checkbox, so the user will check a box to indicate their answer. -->
+        <div class="contentdiv">
+          <label for="63cyber">63%</label>
+          <input id="83cyber" type="checkbox">
+        </div>
+        <!--This is the possible answer. The label shows text that is tethered to this input. The input is where the user actually
+      has an input. In this case, the type of input is checkbox, so the user will check a box to indicate their answer. -->
+        <div class="contentdiv">
+          <label for="37cyber">37%</label>
+          <input id="37cyber" type="checkbox">
+          </div>
+          <!--This is the possible answer. The label shows text that is tethered to this input. The input is where the user actually
+        has an input. In this case, the type of input is checkbox, so the user will check a box to indicate their answer. -->
+        <div class="contentdiv">
+          <label for="29cyber">29%</label>
+          <input id="29cyber" type="checkbox">
+        </div>
+      </div><br><br> <br>
+
+
+<!--Here is the second question-->
+
+
+      <div>
+        <!--Here is the question being asked of the user. -->
+          <span id="formq"> People like to stay hidden online. What percent of internet users think they have too much information about
+          themselves shared online?</span><br>
+          <!--This is the possible answer. The label shows text that is tethered to this input. The input is where the user actually
+        has an input. In this case, the type of input is checkbox, so the user will check a box to indicate their answer. -->
+          <div class="contentdiv">
+          <label for="25info">25%</label>
+          <input id="25info" type="checkbox"><br>
+          </div>
+          <!--This is the possible answer. The label shows text that is tethered to this input. The input is where the user actually
+        has an input. In this case, the type of input is checkbox, so the user will check a box to indicate their answer. -->
+          <div class="contentdiv">
+          <label for="35info">35%</label>
+          <input id="35info" type="checkbox"><br>
+          </div>
+          <!--This is the possible answer. The label shows text that is tethered to this input. The input is where the user actually
+        has an input. In this case, the type of input is checkbox, so the user will check a box to indicate their answer. -->
+          <div class="contentdiv">
+          <label for="50info">50%</label>
+          <input id="50info" type="checkbox"><br>
+          </div>
+           <!--This is the possible answer. The label shows text that is tethered to this input. The input is where the user actually
+              has an input. In this case, the type of input is checkbox, so the user will check a box to indicate their answer. -->
+          <div class="contentdiv">
+          <label for="75info">75%</label>
+          <input id="75info" type="checkbox"><br>
+          </div>
+      </div><br> <br> <br>
+
+<!--Here is the third question-->
+
+      <div>
+        <!--This is what is being asked in the third question.-->
+          <span id="formq">Anonymity is all about hiding personal information about an internet user. What online information are internet
+          users most concerned with keeping private? </span> <br>
+          <!--This is the possible answer. The label shows text that is tethered to this input. The input is where the user actually
+        has an input. In this case, the type of input is checkbox, so the user will check a box to indicate their answer. -->
+          <div class="contentdiv">
+          <label for="emailpriv">Email content</label>
+          <input id="emailpriv" type="checkbox"><br>
+          </div>
+          <!--This is the possible answer. The label shows text that is tethered to this input. The input is where the user actually
+        has an input. In this case, the type of input is checkbox, so the user will check a box to indicate their answer. -->
+          <div class="contentdiv">
+          <label for="searchpriv">Search history</label>
+          <input id="searchpriv" type="checkbox"><br>
+          </div>
+          <!--This is the possible answer. The label shows text that is tethered to this input. The input is where the user actually
+        has an input. In this case, the type of input is checkbox, so the user will check a box to indicate their answer. -->
+          <div class="contentdiv">
+          <label for="locatepriv">Location while using internet</label>
+          <input id="locatepriv" type="checkbox"><br>
+          </div>
+          <!--This is the possible answer. The label shows text that is tethered to this input. The input is where the user actually
+        has an input. In this case, the type of input is checkbox, so the user will check a box to indicate their answer. -->
+          <div class="contentdiv">
+          <label for="chatspriv">Content of online chats</label>
+          <input id="chatspriv" type="checkbox"><br>
+          </div>
+<!--These breaks are just for spacing. -->
+      </div><br> <br> <br>
+
+<!--Here is the fourth question.-->
+      <div>
+          <!--Here is the fourth question and what it's asking. -->
+          <span id="formq">Hackers and other bad guys can use anonymity to hide behind the screen. When was the FBI's cybercrime division founded?</span><br>
+
+          <!--This is the possible answer. The label shows text that is tethered to this input. The input is where the user actually
+        has an input. In this case, the type of input is checkbox, so the user will check a box to indicate their answer. -->
+          <div class="contentdiv">
+          <label for="10crime">2010</label>
+          <input id="10crime" type="checkbox"><br>
+          </div>
+
+          <!--This is the possible answer. The label shows text that is tethered to this input. The input is where the user actually
+        has an input. In this case, the type of input is checkbox, so the user will check a box to indicate their answer. -->
+          <div class="contentdiv">
+          <label for="02crime">2002</label>
+          <input id="02crime" type="checkbox"><br>
+          </div>
+
+          <!--This is the possible answer. The label shows text that is tethered to this input. The input is where the user actually
+        has an input. In this case, the type of input is checkbox, so the user will check a box to indicate their answer. -->
+          <div class="contentdiv">
+          <label for="95crime">1995</label>
+          <input id="95crime" type="checkbox"><br>
+          </div>
+
+          <!--This is the possible answer. The label shows text that is tethered to this input. The input is where the user actually
+        has an input. In this case, the type of input is checkbox, so the user will check a box to indicate their answer. -->
+          <div class="contentdiv">
+          <label for="06crime">2006</label>
+          <input id="06crime" type="checkbox"><br>
+          </div>
+      </div><br> <br> <br>
+      <!--The breaks above are for spacing.-->
+
+
+<!--This is the fifth and final question. -->
+      <div>
+          <!--Here is the fifth question written out. -->
+          <span id="formq">Anonymous sites like Reddit connects users to communities with similar interests to them. As of 2015, how many subreddits were there?</span><br>
+
+          <!--This is the possible answer. The label shows text that is tethered to this input. The input is where the user actually
+        has an input. In this case, the type of input is checkbox, so the user will check a box to indicate their answer. -->
+          <div class="contentdiv">
+          <label for="520red">520,000</label>
+          <input id="520red" type="checkbox"><br>
+          </div>
+
+          <!--This is the possible answer. The label shows text that is tethered to this input. The input is where the user actually
+        has an input. In this case, the type of input is checkbox, so the user will check a box to indicate their answer. -->
+          <div class="contentdiv">
+          <label for="370red">370,000</label>
+          <input id="370red" type="checkbox"><br>
+          </div>
+
+          <!--This is the possible answer. The label shows text that is tethered to this input. The input is where the user actually
+        has an input. In this case, the type of input is checkbox, so the user will check a box to indicate their answer. -->
+          <div class="contentdiv">
+          <label for="640red">640,000</label>
+          <input id="640red" type="checkbox"><br>
+          </div>
+
+          <!--This is the possible answer. The label shows text that is tethered to this input. The input is where the user actually
+        has an input. In this case, the type of input is checkbox, so the user will check a box to indicate their answer. -->
+          <div class="contentdiv">
+          <label for="710red">710,000</label>
+          <input id="710red" type="checkbox"><br>
+          </div>
+        </div><br> <br> <br>
+        <!--The breaks above are for spacing. -->
+
+        <!--This is an input that has a type 'button'. Button inputs will
+      do something 'onclick'. In this case, when the user clicks it, it will fire the
+    javascript function anonQuiz(). The value of Sumbit Quiz means that the text "submit quiz" will
+  appear on the button.  -->
+      <input id="submit" type="button" onclick="anonQuiz();" value="Submit Quiz">
+
+    </form>
+<br>
+
+<!--This is the final answer that will appear after the quiz is submitted. -->
+    <div id="answerfinal">
+        <!---Within this paragraph, it will say "you are x% right!" The x depends on
+      what the javascript outputs for 'percentright'. Right now, it is empty. The reset page
+    button will also appear after the quiz is submitted. It is a classic anchor within a span. -->
+      <p>
+        You are <span id="percentright"></span>% right! <br>
+        <span id="resetpage"><a href="./Anonquiz.html">Reset page</a></span>
+      </p>
+    </div>
+  </div>
+    </div>
+      </body>
+<!--Below is the javascript for the quiz document!-->
+    <script>
+    /*Everything within this document will run when the submit button is clicked. */
+      function anonQuiz() {
+        /*Here I am defining this variable as 0. This variable will count the points the user has based off of their answers.  */
+      var right = 0;
+      /*An if statement only works if the parameters in parentheses is met. document.getElementById applies to the element
+      with the specific id. So, since, 37cyber is the id of the right answer, if that is checked, then I want points to be added. Otherwise, I don't
+      want points to be added. So, if the input with the id of 37cyber is checked, then the old value of right will now be the old value of right with an additional
+      20 points. Essentially, 20 points will be added. */
+      if (document.getElementById("37cyber").checked) {
+        right = right+20;
+      }
+/*The same as explained above is repeated here again for the other right answers. */
+      if (document.getElementById("50info").checked) {
+        right = right+20;
+      }
+      if (document.getElementById("emailpriv").checked) {
+        right = right+20;
+      }
+      if (document.getElementById("06crime").checked) {
+        right = right+20;
+      }
+      if (document.getElementById("640red").checked) {
+        right = right+20;
+      }
+      /*This converts the value 'right', which is currently a number, to a string (or text). This way, it can be in a span or paragraph. */
+      right.toString();
+      /*This code defines the element percentright, which before was an empty span, as the value for the variable 'right'.*/
+      document.getElementById("percentright").innerHTML =
+      right;
+      /*This defines a new variable, answershow. Answershow is equal to the content with the id of answerfinal. This is the content that was
+      originally hidden and is the content that says "you are x% right!". */
+      var answershow = document.getElementById("answerfinal");
+      /*This makes it so that the variable answershow has a visibility of visible, when before it was hidden. Essentially, now the viewer can see it, along with
+      the results of the quiz. */
+      answershow.style.visibility = "visible"
+    }
+    </script>
+
+</html>
