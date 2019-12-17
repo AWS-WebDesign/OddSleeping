@@ -1,0 +1,410 @@
+/*This is a css document. It defines styles for html elements and is linked to them in the meta data of each html document. */
+/*
+v
+v
+This is the general styling for the nagivation bar and top of the page
+v
+v
+*/
+
+
+/*This will apply to the navigation bar. Its display will be block, which means it'll be treated
+like an object instead of something to be put in line. The font of the content of this class
+will be 40px, and the text will be centered within its container (it will be centered within its section).
+The width of 103% was made because I want it to fill the whole area of the page, but there was a little extra
+space when I made it 100%, so I changed it to 103% so that it fits perfectly. The padding is also to make it fit right.
+Padding is basically space that is within an element's container, while margins are space that are outside of an element's container.
+*/
+.navbar {
+  display: block;
+  font-size: 40px;
+  text-align: center;
+  width: 103%;
+  padding-left: -30px;
+  padding-right: -30px;
+  margin-left: -8px;
+
+}
+/*This applies only to the anchors (a), or links, within the navigation bar at the top of every page. The text decoration
+is none so that the links do not appear as underlined (they default to underlined). The padding as a percent is so that
+the padding to the left and right of each element is a certain percent of the whole webpage's width. After trial and error, I found this to be 9.1%.
+They are all floated to the left, and this means that they are situated on the left side of the page. Because they are all floated left, they
+appear as stacked next to each other. Their background color will be grey, and the color attribute means that the color of their text will appear
+as black.  */
+.navbar a {
+  text-decoration: none;
+  padding-left: 9.1%;
+  padding-right: 9.1%;
+  float: left;
+  background-color: Grey;
+  color: Black;
+
+}
+/*This applies when the anchors (a) of the navbar class are hovered over by the user. When they are hovered over, their background color
+will change to dark grey, they will not be underlined, and their text color will be black. I redefine text decoration and text color here because later I define some
+general specifications for anchors and I didn't want it to revert back to the old specifications. */
+.navbar a:hover{
+  background-color: DarkGrey;
+  text-decoration: none;
+  color: Black;
+}
+/*This is the class for the big words at the top of every webpage. At the top of the homepage, it reads "Anonymity".
+This will appear as text with a background color of light blue, and a text color of black. The text will be aligned in the center
+of the page, and the font will be sized at 70px. The margin-bottom attribute defines how much margin space should be beneath it. In this case,
+it is negative 100px. I made it negative so that it would delete some extra space that was automatically created by the divs for the title. (Divs
+make some extra space around them when they're formed.) The padding-top just puts a little extra space at the top of the title so it looks nicer and more
+spaced out. */
+.extrabiigheader{
+background-color: LightBlue;
+color: black;
+text-align: center;
+font-size: 70px;
+margin-bottom: -100px;
+padding-top: 15px;
+}
+/*This defines the styling for all anchors within the website, unless these attributes are overrided somewhere else, like
+in the ".navbar a" above. All anchors, according to this, will be black and will have no text decoration. */
+a {
+  text-decoration: none;
+  color: black;
+}
+/*When any anchor is hovered over (unless otherwise defined), it will be underlined (as seen with the text-decoration attribute),
+and it will appear as having a text color of dark grey. */
+a:hover {
+  text-decoration: underline;
+  color: DarkGrey;
+}
+/*This div is applied to the entire heading of all of the documents including the main title and also the sub title that says
+it is a project by Anna and Ananya. The background color will again be light blue, the text color will be black, and it will be aligned in the center.
+The font will be 50 px, and the margin-top, -left, -right will adjust it so it fits the page just right. The padding bottom is just so there's a little space
+beneath it so it looks nice. */
+.biigheader{
+background-color: LightBlue;
+color:black;
+text-align: center;
+font-size: 50px;
+margin-top: -80px;
+margin-left: -10px;
+margin-right: -10px;
+padding-bottom: 10px;
+
+}
+/*This is a very important div. It gives some general styling for the content of every webpage, including any animations I used at the beginning.
+It has a z-index of 0 so that elements with a greater z-index are stacked on top of it. The background color is light grey, the font is 24 px, and the
+margins go all the way to the edges of the page. I made the margins negative so that there isn't any extra white space on the sides. By making the overflow-x
+hidden, the user cannot scroll to the left or right of the page and encounter weird white space - it cuts all of the x overflow. */
+.anonmain {
+  z-index: 0;
+  background-color: LightGrey;
+  font-size: 24px;
+  margin-left: -10px;
+  margin-right: -10px;
+  overflow-x: hidden;
+}
+/*This is applied frequently throughout the document for the general content (no top animations) for the webpage.
+It just puts some padding on the sides of the document so that the spacing is cleaner. */
+.anoncontent {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+
+/*
+v
+v
+ This applies to the 'home' part of the anonymity project.
+v
+v
+ */
+
+
+/*This applies to the image of the mask that appears in the home page.
+The position is absolute, which means that its position will not change when interacting with other elements.
+This allows me to stack other elements on top of it. The z-index is 1, which means that it is on 'level' 1 for being stacked.
+The z-index of the greater class anonmain is 0 so it goes underneath everything. The margins on the right and left are percents
+so that it stays centered no matter how big the page is. I made it 37% on the right because it didn't look quite centered.
+The animation-name attribute defines what the animation (below) will be called. The animation-duration is how long the animation
+will run for. This animation will run for 7 seconds. The opacity is 0%, which means that this will not be opaque at all, or it will
+appear invisible. The margin-bottom is negative because there was a weird amount of space below it before. */
+.anonimg {
+  position: absolute;
+  z-index: 1;
+  margin-left: 37%;
+  margin-right: 35%;
+  animation-name: faceanim;
+  animation-duration: 7s;
+  opacity: 0%;
+  margin-bottom: -100;
+
+}
+/*This is the text that will appear after the image above fades out (I will describe in the animation). The z-index is 2
+so it will be stacked on top of the image. I made the padding and margins specifically so that it aligns centered on top of
+where the image was when it appears. The font will be 50 pixels. The animation for this one is called 'textanim' and
+will go on for 11 seconds. It starts out with an opacity of 100%, or it will be 100% visible. */
+.anonfacetext {
+  z-index: 2;
+  padding-bottom: 200px;
+  margin-top: -400px;
+  margin-left: 25%;
+  margin-right: 20%;
+  margin-bottom: 100px;
+  animation-name: textanim;
+  animation-duration: 11s;
+  opacity: 100%;
+  font-size: 50px;
+}
+/*This is an animation. @keyframes defines an animation. The name of this animation is faceanim, and as you can see in the
+anonimg class, there is an animation defined there as faceanim. So, the content of this animation will affect elements within the anonimg
+class. The way an animation works is that the percents show how the style will change at different percents of the animation's duration.
+For example, at 0 seconds, the opacity of the face image will be 100% - it will be totally visible. At 40% of 7 seconds (the animation duration), the opacity will still
+be 100%. At 70% of 7 seconds, the opacity will drop into 70%, meaning the mask will begin to fade. In the last 30% of those 7 seconds, it will fade
+to 0% opacity. Since the opacity is defined as 0% in anonimg's div, it will stay at 0% opacity after the animation has completed.  */
+@keyframes faceanim {
+  0% {opacity: 100%;}
+  40% {opacity: 100%;}
+  70% {opacity: 70%;}
+  100% {opacity: 0%;}
+
+}
+/*Similarly to the explaination above, this will start at 0% opacity (invisible), and stay that way for 70% of 11 seconds.
+After that time is up, it will begin fading into visibilty. Since anonfacetext is defined as completely visible in its class,
+it will stay visible after the animation is over. */
+@keyframes textanim {
+  0% {opacity: 0%;}
+  70% {opacity: 0%;}
+  100% {opacity: 100%;}
+}
+
+
+/*
+vvv
+The information for the cons document
+vvv
+ */
+
+/*At the top of the cons document, a bar looks as though it is loading an account. These next parts of styling define that. */
+
+/*This is the id for a canvas element. It will have some space above it. As you can see, the z-index is 2, so it is layered
+above anything else in the webpage. The position is absolute so that other elements cannot knock it out of place - this allows me
+to stack elements. It is shifted to the center, and by doing so I had to alter the margins a lot. This is the canvas beneath the loading bar that
+the red bar will fill up. */
+#downloadbar {
+  margin-top: 50px;
+  position: absolute;
+  z-index: 2;
+  margin-left: -230px;
+}
+
+/*This is the id for the second canvas. This is the red canvas that will gradually increase until it fills up the bar (like a loading screen).
+The margins are adjusted so that it is on top of the other element (notice the margins for both are the same). The z-index is 3, so it will
+be positioned on top of the other element. The position is absolute so that other elements do not knock it out of place.
+This one will be moving to fill the bar, so it has an animation. Its animation is called xmove. It will go on for 4 seconds per whole animation cycle.
+The animation-timing-function attribute defines how the animation progresses - I made it linear so that it will fill the bar at an even speed.
+The animation-iteration-count defines how many times the animation should be repeated. This animation repeats forever, so the animation iteration count
+is infinite. */
+#downloadbar2 {
+  margin-left: -230px;
+  margin-top: 50px;
+  z-index: 3;
+  position: absolute;
+  animation-name: xmove;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+/*This is the animation for the canvas downloadbar2. It will start with a width of 0 and a height of 50. As you can see, this width will
+progress until it is completely full at 90%. I made it full for 10% (even though it would stop moving) so that the animation stays still for a moment
+and is easier on the eyes. I defined the height at every percentage checkpoint because otherwise, the width and height were adjusted together, and I didn't want
+that. By redefining the height as 50px, it stays 50px throughout the animation. */
+@keyframes xmove {
+  0% {width: 0px; height: 50px;}
+  50% {width: 350px; height: 50px;}
+  90% {width: 500px; height: 50px;}
+  100% {width: 500px; height: 50px;}
+}
+/*This defines the piece of text underneath the loading bar. It has some margin to it so that it is aligned properly. */
+#canvastext {
+  margin-left: 400px;
+
+}
+/*This styling defines all iframes (though there's only one). It will appear on the left of the screen and its padding will be
+20 px on the right. This is for the cyberbullying video. I made the style just for all iframes because it was faster than defining a
+new class for the iframe. */
+iframe {
+  float: left;
+  padding-right: 20px;
+}
+/*This is a style for all list items, or 'li's which puts padding in. I did this so that there's more space between bullet points. */
+li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/*This is the styling for the div imgslideshow which contains all of the slideshows. The position is relative so it flows with the content around it.
+It is floated to the right so it will appear on the right of the page. */
+.imgslideshow {
+  position:relative;
+  float: right;
+}
+/*This is the styling of the slideshow class. This is so that for the slideshow of changing images, the display of all of them will start
+as none and then will change depending on which image it is.  */
+.slideshow {
+  display: none;
+}
+/*This applies to the div cyberbully. I made it to style the cyberbully section, but also because I made the background color dark grey
+to provide contrast to the light grey background of other parts of the document. It has some special padding and margin information so that
+it looks good with the cyberbullying video. */
+.cyberbully {
+  background-color: DarkGrey;
+  padding-bottom: 200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: -30px;
+  margin-right: -30px;
+  padding-top: 10px;
+}
+/*This is identical to the style above, but I used it again in other places where I wanted all of the above mentioned characteristics
+but I didn't want so much bottom padding. Notice that the padding-bottom is only 80px. */
+.cyberbully2 {
+  background-color: DarkGrey;
+  padding-bottom: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: -30px;
+  margin-right: -30px;
+  padding-top: 10px;
+}
+/*This is the styling for the image of tati westibrook under the james charles controversy section.
+It has a border-style of solid, so it will have a border that is solid. The border around the image will have a width of 5 px
+and will be dark grey. It will be on the right of the page and I made the top margin different because there was a little bit exta
+space. */
+#byesister {
+  border-style: solid;
+  border-width: 5px;
+  border-color: DarkGrey;
+  float: right;
+  margin-top: -90px;
+}
+/*This is the styling for one of the screenshots from the James Charles controversy. It is floated left. */
+#screenshot {
+  float: left;
+}
+/*This is the second screenshot - it appears on the right and I changed the margin so it's positioned nicely. */
+#screenshot2 {
+  float: right;
+  margin-left: -400px;
+}
+/*I made this div for the info beneath the screenshots so that I could make some space between the content. */
+.spacebelow {
+  margin-bottom: 200px;
+  margin-top: 50px;
+}
+
+/*
+v
+v
+Information for the pros document
+v
+v
+*/
+
+/*This is the styling for the first hidden message, which will appear in a speech bubble.
+It will appear as light grey text. The transition of color 2 seconds means that there will be a transition
+between the color of the text and it will last for 2 seconds. Transitions apply when the element is hovered over.
+It will transition (as seen below) between light grey (the color of the background, essentially invisible)
+and black. The z-index is 1 so it appears on top of the speech bubbles. The float and margin and just for positioning.
+The position of absolute means that it can easily stack with other content. */
+ #hiddenmessage {
+   color: LightGrey;
+   transition: color 2s;
+   z-index: 1;
+   float: left;
+   margin-left: -260px;
+   margin-top: 55px;
+   position: absolute;
+
+ }
+/*This applies so that when things in this class are hovered over, their color will change to black.  */
+ #hiddenmessage:hover{
+   color: Black;
+ }
+/*This is the id for the second bubble image. There isn't one for the other because it was
+already well positioned. It has a z-index of 1, but that doesn't really matter because it's a png and so the space where the
+text goes within the speech bubble will not interfere with the text. Its position is relative so its position relies on the position of the
+elements around it. The margin is just for adjusting position. */
+#bubbleimg2 {
+  float: right;
+  z-index: 1;
+  position: relative;
+  margin-top: -300px;
+  margin-right: 200px;
+}
+/*This is the styling for the other hidden text. It is about the same, but the z-index is different because I was playing around with
+the z index when I was adjusting it, but it's basically irrelevant. It is on the right and has some different positioning. */
+#hiddenmessage2 {
+  color: LightGrey;
+  transition: color 2s;
+  z-index: 2;
+  float: right;
+  margin-left: 700px;
+  margin-top: -250px;
+
+  position: absolute;
+
+}
+/*This is the same deal for the hover and the transition as before. */
+#hiddenmessage2:hover {
+  color: Black;
+}
+
+ /*
+ v
+ v
+ Information for the Quiz Document - this document has a quiz in it and so all of the styling relates to it.
+ v
+ v
+ */
+
+/*This applies to all of the spans within a form. They will all be bold and 30 px in size. Font-weight describes
+how bold a font is.*/
+ form span {
+   font-weight:bold;
+   font-size: 30px;
+ }
+/*This defines all of the answers to the quiz. The will all be floated on the left and have a display of block.
+They will all have a border that is solid, black, and 4 px. The padding of 5x 25px means that the top and bottom
+padding will be 5 px and the left and right padding will be 25 px. The background color will be white. */
+ .contentdiv {
+   float: left;
+   display: block;
+   border-style: solid;
+   border-color: Black;
+   border-width: 4px;
+   padding: 5px 25px;
+   background-color: white;
+}
+/*This means that when the answers to the quiz are hovered over, they'll appear blue. */
+.contentdiv:hover {
+  background-color: LightBlue;
+}
+/*This applies to all inputs that are buttons. There is only one, the submit button. It's width will be 40% of the page,
+while its margins will be the other 60% of the page. The text within the submit button will be centered.
+Everything is pretty self explanatory.
+The border radius makes the edges rounded - the greater px count, the greater curve of the edges. */
+input[type=button] {
+  width: 40%;
+  text-align: center;
+  background-color: white;
+  color: DarkBlue;
+  font-family: serif;
+  font-size: 30px;
+  border-radius: 8px;
+  display: block;
+  margin-left: 10%;
+  margin-right: 50%;
+}
+/*This applies to the final answer - at first, it will not be visible. I altered the visibility and not the
+display so that it still takes up space on the page, it's just not visible. */
+#answerfinal {
+  visibility: hidden;
+}
