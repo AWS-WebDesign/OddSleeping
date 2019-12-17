@@ -1,4 +1,4 @@
-<!--This defines the document as an html document- it will be at the front of every single html document. -->
+<!--This defines the document as an html document. it will be at the front of every single html document. -->
 <!DOCTYPE html>
 <!--Everything inside this will be written as html code.-->
 <html lang="en" dir="ltr">
@@ -35,16 +35,14 @@ The title element means that "anonymity cons" will appear in the tab of the docu
     <br>
     <!--This defines some of the main styling for this page. It is the same class as before. -->
     <div class="anonmain">
-<!--Within this paragraph is a downloading bar animation as well as the first intro paragraph. -->
-    <p>
       <!--The center element centers the content within it, which in this case is the download bar. -->
     <center>
       <!--Canvas elements are esentially boxes that can be made in HTML documents. With Javascript, they can be drawn on, but for these
       purposes, they are just empty canvases. These canvases are sized (with width and height specifications) to be long and skinny. The style is defined here
-    just so that it's easier, instead of being styled within the css document - this is because, when I made it, I was changing
+    just so that it's easier, instead of being styled within the css document. this is because, when I made it, I was changing
   these things a lot, and so it was easier for it to be right there. I used the id of them to define more complicated padding
-in the actual css document. I used positioning so that the canvases are stacked exactly on top of each other - you'll notice that the
-second canvas is red - with the animations I gave, it will appear as a bar loading. -->
+in the actual css document. I used positioning so that the canvases are stacked exactly on top of each other. you'll notice that the
+second canvas is red. with the animations I gave, it will appear as a bar loading. -->
     <canvas id="downloadbar" width="500px" height="50px" style="border:1px solid; background-color: DarkGrey;"></canvas>
     <canvas id="downloadbar2" width="500px" height="50px" style="border:1px solid; background-color: red;"></canvas>
   </center>
@@ -61,27 +59,25 @@ some of the spacing.-->
        However, there's always another side to the coin. Are the risks of anonymity
     worth the rewards? In this section, we'll discuss the drawbacks of anonymity, which often manifest in the form of
   hate crimes, cyberbulling, illegal discussions and child trafficking. </p>
-</p>
 <!--The class cyberbully is used a few times so that the background color is different. This is used so that the document
 is more interesting to look at. -->
 <div class="cyberbully">
   <!--The center element centers this element. The element it centers is the header (h2) that will appear as the header "cyberbullying". H2s are
 different than h1s because they are slightly smaller. -->
   <center><h2>Cyberbullying</h2></center>
-  <!--This is an iframe - it was taken directly from the 'embed' section of a youtube video, but I redefined the height and width so that it fits better
+  <!--This is an iframe. it was taken directly from the 'embed' section of a youtube video, but I redefined the height and width so that it fits better
 with my webpage. It will appear as a clickable, playable youtube video. I made it on css so all iframes (though this is the only one), will be floated to the left.  -->
   <iframe width="560" height="315" src="https://www.youtube.com/embed/0Xo8N9qlJtk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <!--This is info next to the video with some information. The paragraph and span are just some regular text information. -->
-  <p>This video lists many different forms of cyberbullying. While some, like exclusion, involves familiar people
-  to the victim, many, like stalking and stealing accounts, utilizes anonymity to fulfill these tasks.
+  <p>This video lists many different forms of cyberbullying. While some, like exclusion, involve familiar people
+  to the victim, many, like stalking and stealing accounts, utilize anonymity to fulfill these tasks.
   <span>Around 37% of teens say they've been cyberbullied at some point in their life. </span></p>
 </div>
-<!--This paragraph holds all of the information within it about cybercrime. -->
-<p>
+
   <!--This is the title for this section about cybercrime. It is styled as before. As you may notice, it does not have the div of cyberbully, and
-so it will appear as light grey, and not dark grey. By putting a paragraph around everything, I can just type text without having to make a span every time. -->
+so it will appear as light grey, and not dark grey. -->
 <center><h2>Cybercrime</h2></center>
-While it may benefit online users, anonymity makes the FBI's job much harder. <br>
+<span>While it may benefit online users, anonymity makes the FBI's job much harder.</span> <br>
 <!--This defines the slideshow that will appear on the right (I floated it right). -->
 <div class="imgslideshow">
 <!--This is the div for one individual slideshow part. Each is individually cited so that the
@@ -99,41 +95,7 @@ slideshow of different images. They all have a height of 250px and a width of 30
     <img height="250px" width="300px" src="cybercrime.jpg" alt="An image of a keyboard with handcuffs">
   </div>
 </div>
-<!--The script element lets you code Javascript within HTML.Everything within it is javascript code, but it can still apply
-to regular html code - this does not have any content really - like css, it changes characteristics of html elements.  -->
-<script>
-  /*defines this variable, to be manipulated later. */
-  var slidestuff = 0;
-  /*Runs the function below*/
-  showSlide();
-/*Below is a function- they hold javascript code to be run, and can be fired by an outside source like a button. */
-  function showSlide() {
-    /*This defines a new variable.*/
-    var r;
-    /*I am defining a new variable. It says get elements because there are multiple elements with this class,
-    and I am referring to them all. This gets them from the document. So now, the elements with the class slideshow will be
-    represented by the variable slidegen. */
-    var slidegen = document.getElementsByClassName("slideshow");
- /*The for loop works as follows: The first thing in the list will happen first, then the second thing will define
- what is necessary for the content of the for loop to fire, and the third thing will keep happening until the second condition cannot be met anymore. So in this
- situation, the variable r will start at 0, and will run until the length of the classes with the variable slideshow is greater than r. Every time it runs, r will
- increase by 1, as seen with r++. */
-    for (r=0; r<slidegen.length; r++) {
-      /*When this runs, the display of the class its referring to will be none.*/
-      slidegen[r].style.display = "none";
-}
-/*This means that the previously defined variable slidestuff will increase. */
-    slidestuff++;
-    /*This if statement below basically sets slidestuff equal to 1. */
-    if (slidestuff > slidegen.length) {slidestuff = 1}
-    /*This means that when slidestuff is at a certain value, this value of slidegen will be displayed as block.
-    All of this code is essentially to get things to alternate between all 3 images. */
-    slidegen[slidestuff-1].style.display = "block";
-/*The setTimeout function is the (function to be done, time in miliseconds). So, it'll run this
-function for 3000 miliseconds, or 3 seconds. */
-    setTimeout(showSlide, 3000);
-  }
-</script>
+
 <!--Below is an unordered list, or ul. Everything within it that is labeled list item, or li, will appear as a bulleted
 point. If it were an ordered list, or ol, the "li"s would appear as numbers organized from 1. -->
 <ul>
@@ -141,21 +103,21 @@ point. If it were an ordered list, or ol, the "li"s would appear as numbers orga
 <!--The strong makes the text within it bold. -->
   <li>In 2006, the <strong>FBI cybercrime division was founded</strong></li>
   <li>Adults can use an anonymous username to appear as children online, luring real children into compromising situations</li>
-  <li>Illegal activity can be discussed freely</li>
+  <li>Illegal activity can be discussed freely on anonymous forums</li>
 </ul>
 <!--This is the closing tag for this very long paragraph that is basically this whole section. Below are some breaks put in for
 spacing. -->
-</p> <br><br><br><br>
+<br><br><br><br>
 
-<!--This is the div for the next section - it is labeled cyberbully2 because it has the exact same
-characteristics as the cyberbully styling, but I made the bottom padding 120 pixels less - it had to be more
+<!--This is the div for the next section. it is labeled cyberbully2 because it has the exact same
+characteristics as the cyberbully styling, but I made the bottom padding 120 pixels less. it had to be more
 before because there was a fairly large video, but here it's all text and so a lot of padding wasn't necessary. -->
 <div class="cyberbully2">
   <!--The center element centers the header. It is h2 because it has the properties of a header (bold, big) but it is
 slightly smaller than an h1. -->
 <center><h2>What Internet Users have to say:</h2></center>
 <!--Inside is just two paragraphs (p) about anominity. -->
-<p>Internet users value our anonimity. According to a Pew Research study, 68% of internet users
+<p>Internet users value our anonymity. According to a Pew Research study, 68% of internet users
 think their privacy is not protected enough online. 50% of users are worried about how much information
 about them is online. The most important thing to keep hidden to them is their email information.
 </p>
@@ -177,7 +139,7 @@ in the video <a href="https://www.youtube.com/watch?v=XbaJ1JsBWQE"><strong>Bye S
 defines it for styling in the css document. It will appear on the right side of the screen. The alt is text that will
 appear if the image doesn't load. The width is 400px and the height is 200px. The image I used is called bye.jpg.-->
 <img id="byesister" width="400px" height="200px" src="bye.jpg" alt="An image of Tati Westbrook"> <br>
-<!--This is a span - I used it instead of a paragraph because spans tend to be more compact. It describes some of the youtube
+<!--This is a span. I used it instead of a paragraph because spans tend to be more compact. It describes some of the youtube
 drama. I put a break in the middle of it to act as a return key. The breaks at the end are for spacing.  -->
 <span>The internet responded swiftly with hate for James. More hate comments began to
 build, with more and more internet users jumping on the hate bandwagon without learning the facts.
@@ -195,12 +157,12 @@ different heights and widths. They will appear next to each other. -->
 <div class="spacebelow">
   <!--This is a regular span. The anchor (a) in the middle of it is used to link to an apology video. It is strong so that
 it appears noticeable and clickable. The target is blank so that it opens in a new page.  -->
-  <span>The screenshots above are in response to the wave of hate after the apology video,
+  <span>The screenshots above are in response to the wave of hate against James Charles. These were written after his apology video,
   <a target="_blank" href="https://www.youtube.com/watch?v=uFvtCUzfyL4&t=15s"><strong>No More Lies</strong></a>.</span>
   <!--Here is a regular paragraph. -->
-  <p>All of this controversy came from a false accusation, but ballooned into a flurr
+  <p>All of this controversy came from a false accusation, but ballooned into a flurry
   of hate comments that greatly impacted one Youtuber's life. Youtubers are in the position where millions of
-people anonymously decide whether or not they're liked or not. Being hidden behind the screen makes them malicious
+people anonymously decide whether or not they're liked or not. Being hidden behind the screen makes fans malicious
 without thinking of the consequences of their words. </p>
 </div>
 </div>
@@ -208,4 +170,40 @@ without thinking of the consequences of their words. </p>
     </div>
 <!--These are just the closing tags for some greater divs. -->
   </body>
+
+  <!--The script element lets you code Javascript within HTML.Everything within it is javascript code, but it can still apply
+  to regular html code. this does not have any content really. like css, it changes characteristics of html elements.  -->
+  <script>
+    /*defines this variable, to be manipulated later. */
+    var slidestuff = 0;
+    /*Runs the function below*/
+    showSlide();
+  /*Below is a function. they hold javascript code to be run, and can be fired by an outside source like a button. */
+    function showSlide() {
+      /*This defines a new variable.*/
+      var r;
+      /*I am defining a new variable. It says get elements because there are multiple elements with this class,
+      and I am referring to them all. This gets them from the document. So now, the elements with the class slideshow will be
+      represented by the variable slidegen. */
+      var slidegen = document.getElementsByClassName("slideshow");
+   /*The for loop works as follows: The first thing in the list will happen first, then the second thing will define
+   what is necessary for the content of the for loop to fire, and the third thing will keep happening until the second condition cannot be met anymore. So in this
+   situation, the variable r will start at 0, and will run until the length of the classes with the variable slideshow is greater than r. Every time it runs, r will
+   increase by 1, as seen with r++. */
+      for (r=0; r<slidegen.length; r++) {
+        /*When this runs, the display of the class its referring to will be none.*/
+        slidegen[r].style.display = "none";
+  }
+  /*This means that the previously defined variable slidestuff will increase. */
+      slidestuff++;
+      /*This if statement below basically sets slidestuff equal to 1. */
+      if (slidestuff > slidegen.length) {slidestuff = 1}
+      /*This means that when slidestuff is at a certain value, this value of slidegen will be displayed as block.
+      All of this code is essentially to get things to alternate between all 3 images. */
+      slidegen[slidestuff-1].style.display = "block";
+  /*The setTimeout function is the (function to be done, time in miliseconds). So, it'll run this
+  function for 3000 miliseconds, or 3 seconds. */
+      setTimeout(showSlide, 3000);
+    }
+  </script>
 </html>
